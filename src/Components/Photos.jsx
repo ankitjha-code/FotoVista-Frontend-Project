@@ -3,7 +3,15 @@ import { FaHeart, FaDownload, FaShare, FaThumbsUp } from "react-icons/fa";
 import Lightbox from "react-image-lightbox";
 import InfiniteScroll from "react-infinite-scroll-component";
 
-const Photos = ({ searchQuery, handleFavouriteClick, favouritePhotos, lightboxIndex, isLightboxOpen, openLightbox, closeLightbox }) => {
+const Photos = ({
+  searchQuery,
+  handleFavouriteClick,
+  favouritePhotos,
+  lightboxIndex,
+  isLightboxOpen,
+  openLightbox,
+  closeLightbox,
+}) => {
   const [loading, setLoading] = useState(false);
   const [photos, setPhotos] = useState([]);
   const [page, setPage] = useState(1);
